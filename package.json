@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graphql": "^14.5.4"
+    "graphql": "14.2.1"
   },
   "devDependencies": {
     "apollo": "^2.18.0"
