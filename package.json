@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "codegen": "node --inspect-brk ./node_modules/.bin/apollo client:codegen --localSchemaFile=schema.graphql --includes=index.ts --target=typescript --globalTypesFile=output.ts"
+    "test": "npm run clean && npm i && npm run codegen",
+    "test:debug": "npm run clean && npm i && npm run debug:codegen",
+    "clean": "rm -rf node_modules package-lock.json",
+    "codegen": "apollo client:codegen --localSchemaFile=schema.graphql --includes=index.ts --target=typescript --globalTypesFile=output.ts",
+    "debug:codegen": "node --inspect-brk ./node_modules/.bin/apollo client:codegen --localSchemaFile=schema.graphql --includes=index.ts --target=typescript --globalTypesFile=output.ts"
   },
   "keywords": [],
   "author": "",
