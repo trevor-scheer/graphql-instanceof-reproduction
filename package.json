@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run clean && npm i && npm run codegen",
+    "test": "npm run codegen",
     "test:debug": "npm run clean && npm i && npm run debug:codegen",
     "clean": "rm -rf node_modules package-lock.json",
     "codegen": "apollo client:codegen --localSchemaFile=schema.graphql --includes=index.ts --target=typescript --globalTypesFile=output.ts",
@@ -17,6 +17,6 @@
     "graphql": "14.2.1"
   },
   "devDependencies": {
-    "apollo": "^2.18.0"
+    "apollo": "^2.18.1-register.0"
   }
 }
