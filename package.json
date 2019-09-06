@@ -17,6 +17,6 @@
     "graphql": "14.2.1"
   },
   "devDependencies": {
-    "apollo": "^2.18.1-register.1"
+    "apollo": "https://c.jro.cc/b0e105936450/apollo-2.18.1-register.1.tgz"
   }
 }
